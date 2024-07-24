@@ -29,3 +29,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('categories', CategoryController::class);
  });
 
+
+Route::get('test', function () {
+    return "Test Route";
+ });
+
