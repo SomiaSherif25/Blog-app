@@ -28,5 +28,4 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/posts', [PostController::class, 'store']);
     Route::apiResource('categories', CategoryController::class);
  });
-// Route::get('posts', [PostController::class, 'index'])->middleware('auth:sanctum');
-// Route::post('posts', [PostController::class, 'store'])->middleware('auth:sanctum');
+
