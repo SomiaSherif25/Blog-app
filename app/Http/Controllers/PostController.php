@@ -54,6 +54,6 @@ class PostController extends Controller
         $post->delete();
         Log::info('Post Deleted: ', ['post' => $post]);
         return response()->json(null,204);
-    }
+    }    
     
 }

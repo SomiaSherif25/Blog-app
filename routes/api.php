@@ -24,9 +24,9 @@ use Illuminate\Support\Facades\Route;
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
-// Route::middleware('auth:sanctum')->group(function () {
-//     Route::post('/posts', [PostController::class, 'store']);
-//     Route::apiResource('categories', CategoryController::class);
-//  });
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/posts', [PostController::class, 'store']);
+    Route::apiResource('categories', CategoryController::class);
+ });
 // Route::get('posts', [PostController::class, 'index'])->middleware('auth:sanctum');
 // Route::post('posts', [PostController::class, 'store'])->middleware('auth:sanctum');
